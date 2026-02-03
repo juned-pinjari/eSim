@@ -1,53 +1,33 @@
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/fossee/esim?color=blueviolet)
-![GitHub](https://img.shields.io/github/license/fossee/esim?color=blue)
-![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)
-[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
-![Travis (.com)](https://img.shields.io/travis/com/Eyantra698Sumanto/eSim)
-[![Documentation Status](https://readthedocs.org/projects/esim/badge/?version=latest)](https://esim.readthedocs.io/en/latest/?badge=latest)
-[![GitHub forks](https://img.shields.io/github/forks/fossee/esim)](https://github.com/fossee/esim/network)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/fossee/esim)
-![GitHub contributors](https://img.shields.io/github/contributors/fossee/esim)
+# eSim 2.5 Port for Ubuntu 25.04 (Plucky Puffin)
 
-## eSim
+**FOSSEE Internship Spring 2026 - Task 4 Submission**
+* **Ported by:** Juned Mahetab Pinjari
+* **Status:** ✅ Stable / Verified
+* **Architecture:** x86_64
 
-[eSim](https://esim.fossee.in/) is an open source EDA tool for circuit design, simulation, analysis and PCB design, developed by [FOSSEE Team](https://www.fossee.in/) at [IIT Bombay](https://www.iitb.ac.in/).
-It is an integrated tool build using open source softwares such as KiCad, Ngspice and GHDL.
+## 📌 Project Overview
+This repository contains the patched installation scripts required to run **eSim 2.5** on **Ubuntu 25.04**. The official installer supports up to Ubuntu 22.04/24.04. This port resolves critical architectural incompatibilities introduced by **GCC 14**, **LLVM 20**, and **Python 3.13**.
 
-## Releases and Installation
-eSim is released for the following distributions (operating systems):
-* Ubuntu 22.04, 23.04, 24.04 LTS versions.
-* Microsoft Windows 8, 10 and 11.
+## 🚀 Installation Guide
 
-To use eSim on your machine having above distributions, please refer to link [here](https://esim.fossee.in/downloads) for installation and other guidelines.
+### Prerequisites
+* **OS:** Ubuntu 25.04 (Plucky Puffin)
+* **RAM:** Minimum **4GB** (Required for Mixed-Signal compilation)
+* **Internet:** Active connection required for downloading dependencies.
 
-> Note for other distributions: You can refer [`installers`](https://github.com/fossee/eSim/tree/installers) branch for documentation on packaging (for above mentioned distributions) to build installers for your operating system in a similar way. For providing your build, please check the `Contribution` section mentioned below.
+### Quick Start
+Run the following commands in your terminal:
 
-## Features
-* An open-source EDA tool.
-* Perform Circuit Design.
-* Perform Simulation.
-* Perform Layout Design.
-* Model and Subcircuit builder.
-* Support for Mixed-Signal Simulations including Microcontrollers.
-* eSim has been successfully ported to low cost FOSSEE [laptop](https://laptop.fossee.in/)
+```bash
+# 1. Clone this repository
+git clone [https://github.com/Md-Juned-45/eSim.git](https://github.com/Md-Juned-45/eSim.git)
+cd eSim
 
-## Open-Source Softwares Used
-* [Python](https://www.python.org/)
-* [KiCad](https://www.kicad.org/)
-* [NGHDL](https://github.com/fossee/nghdl/)
-* [Makerchip](https://www.makerchip.com/)
-* [SkyWater SKY130 PDK](https://skywater-pdk.rtfd.io/)
+# 2. Checkout to the installer branch
+git checkout installer
 
-## eSim Manual
-To know everything about eSim, how it works and it's feature please download the manual from [here](https://static.fossee.in/esim/manuals/eSim_Manual_2.5.pdf)
+# 3. Make the script executable
+chmod +x install-eSim.sh install-eSim-scripts/install-eSim-25.04.sh
 
-## Contact
-For any queries regarding eSim please write us on at this [email address](mailto:contact-esim@fossee.in).
-
-Other Contact Details are available [here](https://esim.fossee.in/contact-us).
-
-## Contribution
-Please refer [here](https://github.com/FOSSEE/eSim/blob/master/CONTRIBUTION.md) for further details.
-
-## License
-It is developed by FOSSEE Team at IIT Bombay and is released under GNU GPL License.
+# 4. Run the installer
+./install-eSim.sh --install
