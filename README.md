@@ -20,7 +20,7 @@ Run the following commands in your terminal:
 
 ```bash
 # 1. Clone this repository
-git clone [https://github.com/Md-Juned-45/eSim.git](https://github.com/Md-Juned-45/eSim.git)
+git clone [https://github.com/juned-pinjari/eSim.git](https://github.com/juned-pinjari/eSim.git)
 cd eSim
 
 # 2. Checkout to the installer branch
