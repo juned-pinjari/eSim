@@ -1,7 +1,7 @@
-# eSim 2.5 Port for Ubuntu 25.04 (Plucky Puffin)
+# eSim 2.5 Port for Ubuntu 25.04
 
-**FOSSEE Internship Spring 2026 - Task 4 Submission**
-* **Ported by:** Juned Mahetab Pinjari
+**FOSSEE Internship Autumn 2026 - Task 4 Submission**
+* **Ported by:** Juned Pinjari
 * **Status:**  Stable / Verified
 * **Architecture:** x86_64
 
@@ -20,11 +20,11 @@ Run the following commands in your terminal:
 
 ```bash
 # 1. Clone this repository
-git clone [https://github.com/juned-pinjari/eSim.git](https://github.com/juned-pinjari/eSim.git)
+git clone https://github.com/juned-pinjari/eSim.git
 cd eSim
 
 # 2. Checkout to the installer branch
-git checkout installer
+git checkout installers
 
 # 3. Make the script executable
 chmod +x install-eSim.sh install-eSim-scripts/install-eSim-25.04.sh
